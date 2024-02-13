@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:18
 VOLUME /app
 RUN npm -g install serve
 EXPOSE 8080
