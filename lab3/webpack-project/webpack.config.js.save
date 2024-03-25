@@ -43,7 +43,17 @@ module.exports = {
       patterns: [
         { from: 'src/assets/images', to: './' } 
       ]
-    })
-  ]
+    }),
+    new MiniCssExtractPlugin({
+      filename: "styles.css",
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+    ],
+  },
 };
-

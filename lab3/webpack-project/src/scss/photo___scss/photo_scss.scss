@@ -1,0 +1,20 @@
+.photo_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.photo_heading_text {
+    color: rgb(0, 17, 255);
+}
+
+.photo_item:hover {
+    transition: 3s;
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+    padding: 50px;
+}
+
+.photo_item_description {
+    font-family: "Gill Sans", sans-serif;
+}
